@@ -58,7 +58,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'login' => 'int',
-        'passowrd' => 'string'
+        'password' => 'string'
     ];
 
     /**
@@ -68,7 +68,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'login' => null,
-        'passowrd' => null
+        'password' => null
     ];
 
     /**
@@ -99,7 +99,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'login' => 'login',
-        'passowrd' => 'passowrd'
+        'password' => 'password'
     ];
 
     /**
@@ -109,7 +109,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'login' => 'setLogin',
-        'passowrd' => 'setPassowrd'
+        'password' => 'setPassword'
     ];
 
     /**
@@ -119,7 +119,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'login' => 'getLogin',
-        'passowrd' => 'getPassowrd'
+        'password' => 'getPassword'
     ];
 
     /**
@@ -183,7 +183,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['login'] = isset($data['login']) ? $data['login'] : null;
-        $this->container['passowrd'] = isset($data['passowrd']) ? $data['passowrd'] : null;
+        $this->container['password'] = isset($data['password']) ? $data['password'] : null;
     }
 
     /**
@@ -235,25 +235,25 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
     }
 
     /**
-     * Gets passowrd
+     * Gets password
      *
      * @return string
      */
-    public function getPassowrd()
+    public function getPassword()
     {
-        return $this->container['passowrd'];
+        return $this->container['password'];
     }
 
     /**
-     * Sets passowrd
+     * Sets password
      *
-     * @param string $passowrd passowrd
+     * @param string $password password
      *
      * @return $this
      */
-    public function setPassowrd($passowrd)
+    public function setPassword($password)
     {
-        $this->container['passowrd'] = $passowrd;
+        $this->container['password'] = $password;
 
         return $this;
     }
