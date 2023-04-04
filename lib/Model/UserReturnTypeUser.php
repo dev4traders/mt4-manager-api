@@ -58,7 +58,8 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'login' => 'int',
-        'password' => 'string'
+        'password' => 'string',
+        'password_investor' => 'string'
     ];
 
     /**
@@ -68,7 +69,8 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
       */
     protected static $swaggerFormats = [
         'login' => null,
-        'password' => null
+        'password' => null,
+        'password_investor' => null
     ];
 
     /**
@@ -99,7 +101,8 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'login' => 'login',
-        'password' => 'password'
+        'password' => 'password',
+        'password_investor' => 'password_investor'
     ];
 
     /**
@@ -109,7 +112,8 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
      */
     protected static $setters = [
         'login' => 'setLogin',
-        'password' => 'setPassword'
+        'password' => 'setPassword',
+        'passwordInvestor' => 'setPasswordInvestor'
     ];
 
     /**
@@ -119,7 +123,8 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
      */
     protected static $getters = [
         'login' => 'getLogin',
-        'password' => 'getPassword'
+        'password' => 'getPassword',
+        'password_investor' => 'getPasswordInvestor'
     ];
 
     /**
@@ -184,6 +189,7 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
     {
         $this->container['login'] = isset($data['login']) ? $data['login'] : null;
         $this->container['password'] = isset($data['password']) ? $data['password'] : null;
+        $this->container['password_investor'] = isset($data['password_investor']) ? $data['password_investor'] : null;
     }
 
     /**
@@ -244,6 +250,17 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
         return $this->container['password'];
     }
 
+
+    /**
+     * Gets password
+     *
+     * @return string
+     */
+    public function getPasswordInvestor()
+    {
+        return $this->container['password_investor'];
+    }
+
     /**
      * Sets password
      *
@@ -257,6 +274,21 @@ class UserReturnTypeUser implements ModelInterface, ArrayAccess
 
         return $this;
     }
+
+    /**
+     * Sets password
+     *
+     * @param string $password password
+     *
+     * @return $this
+     */
+    public function setPasswordInvestor($password)
+    {
+        $this->container['password_investor'] = $password;
+
+        return $this;
+    }
+
     /**
      * Returns true if offset exists. False otherwise.
      *
