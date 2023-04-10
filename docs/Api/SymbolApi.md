@@ -1,6 +1,6 @@
-# Swagger\Client\SymbolApi
+# D4T\MT4Sdk\SymbolApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **symbolsGet**
-> \Swagger\Client\Model\ArrayOfSymbols symbolsGet($token)
+> \D4T\MT4Sdk\Models\ArrayOfSymbols symbolsGet($token)
 
 Get list of market symbols
 
@@ -19,7 +19,7 @@ Get list of market symbols
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SymbolApi(
+$apiInstance = new D4T\MT4Sdk\Api\SymbolApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfSymbols**](../Model/ArrayOfSymbols.md)
+[**\D4T\MT4Sdk\Models\ArrayOfSymbols**](../Model/ArrayOfSymbols.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **symgroupsGet**
-> \Swagger\Client\Model\ArrayOfSymGroups symgroupsGet($token)
+> \D4T\MT4Sdk\Models\ArrayOfSymGroups symgroupsGet($token)
 
 Get list of symbol groups
 
@@ -66,7 +66,7 @@ Get list of symbol groups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SymbolApi(
+$apiInstance = new D4T\MT4Sdk\Api\SymbolApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -90,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfSymGroups**](../Model/ArrayOfSymGroups.md)
+[**\D4T\MT4Sdk\Models\ArrayOfSymGroups**](../Model/ArrayOfSymGroups.md)
 
 ### Authorization
 
@@ -113,13 +113,13 @@ Update symbol
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\SymbolApi(
+$apiInstance = new D4T\MT4Sdk\Api\SymbolApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $token = "token_example"; // string | Session token
-$body = new \Swagger\Client\Model\Symbol(); // \Swagger\Client\Model\Symbol | {\"symbol\": \"EURUSD\", \"swap_long\":1.1, \"swap_short\":1.2}
+$body = new \D4T\MT4Sdk\Models\Symbol(); // \D4T\MT4Sdk\Models\Symbol | {\"symbol\": \"EURUSD\", \"swap_long\":1.1, \"swap_short\":1.2}
 
 try {
     $apiInstance->updateSymbol($token, $body);
@@ -134,7 +134,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **string**| Session token |
- **body** | [**\Swagger\Client\Model\Symbol**](../Model/Symbol.md)| {\&quot;symbol\&quot;: \&quot;EURUSD\&quot;, \&quot;swap_long\&quot;:1.1, \&quot;swap_short\&quot;:1.2} |
+ **body** | [**\D4T\MT4Sdk\Models\Symbol**](../Model/Symbol.md)| {\&quot;symbol\&quot;: \&quot;EURUSD\&quot;, \&quot;swap_long\&quot;:1.1, \&quot;swap_short\&quot;:1.2} |
 
 ### Return type
 

@@ -1,6 +1,6 @@
-# Swagger\Client\JournalApi
+# D4T\MT4Sdk\JournalApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **journalHistoryGet**
-> \Swagger\Client\Model\ArrayOfJournalRecords journalHistoryGet($token, $mode, $from, $to, $filter)
+> \D4T\MT4Sdk\Models\ArrayOfJournalRecords journalHistoryGet($token, $mode, $from, $to, $filter)
 
 Get list of journal records
 
@@ -17,7 +17,7 @@ Get list of journal records
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\JournalApi(
+$apiInstance = new D4T\MT4Sdk\Api\JournalApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfJournalRecords**](../Model/ArrayOfJournalRecords.md)
+[**\D4T\MT4Sdk\Models\ArrayOfJournalRecords**](../Model/ArrayOfJournalRecords.md)
 
 ### Authorization
 

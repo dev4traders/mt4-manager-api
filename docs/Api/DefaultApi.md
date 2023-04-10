@@ -1,6 +1,6 @@
-# Swagger\Client\DefaultApi
+# D4T\MT4Sdk\DefaultApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **initGet**
-> \Swagger\Client\Model\InitReturnType initGet($server, $login, $password, $ping_seconds)
+> \D4T\MT4Sdk\Models\InitReturnType initGet($server, $login, $password, $ping_seconds)
 
 Init manager
 
@@ -20,7 +20,7 @@ Init manager
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new D4T\MT4Sdk\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\InitReturnType**](../Model/InitReturnType.md)
+[**\D4T\MT4Sdk\Models\InitReturnType**](../Model/InitReturnType.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **pingGet**
-> \Swagger\Client\Model\ReturnType pingGet($token)
+> \D4T\MT4Sdk\Models\ReturnType pingGet($token)
 
 Ping manager
 
@@ -75,7 +75,7 @@ Ping manager
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DefaultApi(
+$apiInstance = new D4T\MT4Sdk\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -99,7 +99,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ReturnType**](../Model/ReturnType.md)
+[**\D4T\MT4Sdk\Models\ReturnType**](../Model/ReturnType.md)
 
 ### Authorization
 

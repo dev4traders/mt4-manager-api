@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **enable_change_password** | **int** |  | [optional] 
 **send_report** | **int** |  | [optional] 
 **read_only** | **int** |  | [optional] 
-**margin** | [**\Swagger\Client\Model\UserResponseMargin**](UserResponseMargin.md) |  | [optional] 
+**margin** | [**\D4T\MT4Sdk\Models\UserResponseMargin**](UserResponseMargin.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

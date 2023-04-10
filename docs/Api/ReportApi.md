@@ -1,6 +1,6 @@
-# Swagger\Client\ReportApi
+# D4T\MT4Sdk\ReportApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **reportTradesPost**
-> \Swagger\Client\Model\ArrayOfTrades reportTradesPost($token, $body)
+> \D4T\MT4Sdk\Models\ArrayOfTrades reportTradesPost($token, $body)
 
 Get trade details for specified closed orders
 
@@ -17,13 +17,13 @@ Get trade details for specified closed orders
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\ReportApi(
+$apiInstance = new D4T\MT4Sdk\Api\ReportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $token = "token_example"; // string | Session token
-$body = new \Swagger\Client\Model\ReportTradesFilterType(); // \Swagger\Client\Model\ReportTradesFilterType | { \"orders\":[123]}
+$body = new \D4T\MT4Sdk\Models\ReportTradesFilterType(); // \D4T\MT4Sdk\Models\ReportTradesFilterType | { \"orders\":[123]}
 
 try {
     $result = $apiInstance->reportTradesPost($token, $body);
@@ -39,11 +39,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **string**| Session token |
- **body** | [**\Swagger\Client\Model\ReportTradesFilterType**](../Model/ReportTradesFilterType.md)| { \&quot;orders\&quot;:[123]} |
+ **body** | [**\D4T\MT4Sdk\Models\ReportTradesFilterType**](../Model/ReportTradesFilterType.md)| { \&quot;orders\&quot;:[123]} |
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfTrades**](../Model/ArrayOfTrades.md)
+[**\D4T\MT4Sdk\Models\ArrayOfTrades**](../Model/ArrayOfTrades.md)
 
 ### Authorization
 

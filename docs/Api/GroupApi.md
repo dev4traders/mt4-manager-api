@@ -1,6 +1,6 @@
-# Swagger\Client\GroupApi
+# D4T\MT4Sdk\GroupApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **groupGroupNameGet**
-> \Swagger\Client\Model\Group groupGroupNameGet($token, $group_name)
+> \D4T\MT4Sdk\Models\Group groupGroupNameGet($token, $group_name)
 
 Get group by name
 
@@ -20,7 +20,7 @@ Get group by name
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new D4T\MT4Sdk\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Group**](../Model/Group.md)
+[**\D4T\MT4Sdk\Models\Group**](../Model/Group.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **groupsGet**
-> \Swagger\Client\Model\ArrayOfGroups groupsGet($token)
+> \D4T\MT4Sdk\Models\ArrayOfGroups groupsGet($token)
 
 Get list of groups
 
@@ -69,7 +69,7 @@ Get list of groups
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\GroupApi(
+$apiInstance = new D4T\MT4Sdk\Api\GroupApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfGroups**](../Model/ArrayOfGroups.md)
+[**\D4T\MT4Sdk\Models\ArrayOfGroups**](../Model/ArrayOfGroups.md)
 
 ### Authorization
 

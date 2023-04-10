@@ -1,6 +1,6 @@
-# Swagger\Client\OnlineApi
+# D4T\MT4Sdk\OnlineApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **tradesOnlineUserLoginGet**
-> \Swagger\Client\Model\ArrayOfTrades tradesOnlineUserLoginGet($token, $user_login)
+> \D4T\MT4Sdk\Models\ArrayOfTrades tradesOnlineUserLoginGet($token, $user_login)
 
 Get list of live trades for the user
 
@@ -18,7 +18,7 @@ Get list of live trades for the user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OnlineApi(
+$apiInstance = new D4T\MT4Sdk\Api\OnlineApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfTrades**](../Model/ArrayOfTrades.md)
+[**\D4T\MT4Sdk\Models\ArrayOfTrades**](../Model/ArrayOfTrades.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **usersOnlineGet**
-> \Swagger\Client\Model\ArrayOfOnlineUsers usersOnlineGet($token)
+> \D4T\MT4Sdk\Models\ArrayOfOnlineUsers usersOnlineGet($token)
 
 Get list of online users
 
@@ -67,7 +67,7 @@ Get list of online users
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\OnlineApi(
+$apiInstance = new D4T\MT4Sdk\Api\OnlineApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfOnlineUsers**](../Model/ArrayOfOnlineUsers.md)
+[**\D4T\MT4Sdk\Models\ArrayOfOnlineUsers**](../Model/ArrayOfOnlineUsers.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
-# Swagger\Client\TradeApi
+# D4T\MT4Sdk\TradeApi
 
-All URIs are relative to *http://localhost/v1*
+All URIs are relative to *http://localhost:6542/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **tradeClosePost**
-> \Swagger\Client\Model\TradeType tradeClosePost($token, $body)
+> \D4T\MT4Sdk\Models\TradeType tradeClosePost($token, $body)
 
 Close order
 
@@ -22,13 +22,13 @@ Close order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TradeApi(
+$apiInstance = new D4T\MT4Sdk\Api\TradeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $token = "token_example"; // string | Session token
-$body = new \Swagger\Client\Model\CloseTradeFilterType(); // \Swagger\Client\Model\CloseTradeFilterType | { \"ticket\": 12344, \"lots\":100, \"price\":1.4567}
+$body = new \D4T\MT4Sdk\Models\CloseTradeFilterType(); // \D4T\MT4Sdk\Models\CloseTradeFilterType | { \"ticket\": 12344, \"lots\":100, \"price\":1.4567}
 
 try {
     $result = $apiInstance->tradeClosePost($token, $body);
@@ -44,11 +44,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **string**| Session token |
- **body** | [**\Swagger\Client\Model\CloseTradeFilterType**](../Model/CloseTradeFilterType.md)| { \&quot;ticket\&quot;: 12344, \&quot;lots\&quot;:100, \&quot;price\&quot;:1.4567} |
+ **body** | [**\D4T\MT4Sdk\Models\CloseTradeFilterType**](../Model/CloseTradeFilterType.md)| { \&quot;ticket\&quot;: 12344, \&quot;lots\&quot;:100, \&quot;price\&quot;:1.4567} |
 
 ### Return type
 
-[**\Swagger\Client\Model\TradeType**](../Model/TradeType.md)
+[**\D4T\MT4Sdk\Models\TradeType**](../Model/TradeType.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tradeOpenPost**
-> \Swagger\Client\Model\TradeType tradeOpenPost($token, $body)
+> \D4T\MT4Sdk\Models\TradeType tradeOpenPost($token, $body)
 
 Open order
 
@@ -71,13 +71,13 @@ Open order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TradeApi(
+$apiInstance = new D4T\MT4Sdk\Api\TradeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $token = "token_example"; // string | Session token
-$body = new \Swagger\Client\Model\OpenTradeFilterType(); // \Swagger\Client\Model\OpenTradeFilterType | { \"login\": 37011, \"cmd\": 0,\"lots\":0.01,\"symbol\":\"EURUSD\", \"price\":1.3456, \"sl\":0,\"tp\":0}
+$body = new \D4T\MT4Sdk\Models\OpenTradeFilterType(); // \D4T\MT4Sdk\Models\OpenTradeFilterType | { \"login\": 37011, \"cmd\": 0,\"lots\":0.01,\"symbol\":\"EURUSD\", \"price\":1.3456, \"sl\":0,\"tp\":0}
 
 try {
     $result = $apiInstance->tradeOpenPost($token, $body);
@@ -93,11 +93,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **string**| Session token |
- **body** | [**\Swagger\Client\Model\OpenTradeFilterType**](../Model/OpenTradeFilterType.md)| { \&quot;login\&quot;: 37011, \&quot;cmd\&quot;: 0,\&quot;lots\&quot;:0.01,\&quot;symbol\&quot;:\&quot;EURUSD\&quot;, \&quot;price\&quot;:1.3456, \&quot;sl\&quot;:0,\&quot;tp\&quot;:0} |
+ **body** | [**\D4T\MT4Sdk\Models\OpenTradeFilterType**](../Model/OpenTradeFilterType.md)| { \&quot;login\&quot;: 37011, \&quot;cmd\&quot;: 0,\&quot;lots\&quot;:0.01,\&quot;symbol\&quot;:\&quot;EURUSD\&quot;, \&quot;price\&quot;:1.3456, \&quot;sl\&quot;:0,\&quot;tp\&quot;:0} |
 
 ### Return type
 
-[**\Swagger\Client\Model\TradeType**](../Model/TradeType.md)
+[**\D4T\MT4Sdk\Models\TradeType**](../Model/TradeType.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tradeUpdatePost**
-> \Swagger\Client\Model\TradeType tradeUpdatePost($token, $body)
+> \D4T\MT4Sdk\Models\TradeType tradeUpdatePost($token, $body)
 
 Update order
 
@@ -120,13 +120,13 @@ Update order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TradeApi(
+$apiInstance = new D4T\MT4Sdk\Api\TradeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $token = "token_example"; // string | Session token
-$body = new \Swagger\Client\Model\ModifyTradeFilterType(); // \Swagger\Client\Model\ModifyTradeFilterType | { \"ticket\": 12344, \"login\": 123121, \"sl\":0,\"tp\":0, \"price\": 1.1111}
+$body = new \D4T\MT4Sdk\Models\ModifyTradeFilterType(); // \D4T\MT4Sdk\Models\ModifyTradeFilterType | { \"ticket\": 12344, \"login\": 123121, \"sl\":0,\"tp\":0, \"price\": 1.1111}
 
 try {
     $result = $apiInstance->tradeUpdatePost($token, $body);
@@ -142,11 +142,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **string**| Session token |
- **body** | [**\Swagger\Client\Model\ModifyTradeFilterType**](../Model/ModifyTradeFilterType.md)| { \&quot;ticket\&quot;: 12344, \&quot;login\&quot;: 123121, \&quot;sl\&quot;:0,\&quot;tp\&quot;:0, \&quot;price\&quot;: 1.1111} |
+ **body** | [**\D4T\MT4Sdk\Models\ModifyTradeFilterType**](../Model/ModifyTradeFilterType.md)| { \&quot;ticket\&quot;: 12344, \&quot;login\&quot;: 123121, \&quot;sl\&quot;:0,\&quot;tp\&quot;:0, \&quot;price\&quot;: 1.1111} |
 
 ### Return type
 
-[**\Swagger\Client\Model\TradeType**](../Model/TradeType.md)
+[**\D4T\MT4Sdk\Models\TradeType**](../Model/TradeType.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tradesCancelPost**
-> \Swagger\Client\Model\TradeType tradesCancelPost($token, $body)
+> \D4T\MT4Sdk\Models\TradeType tradesCancelPost($token, $body)
 
 Cancel pending order
 
@@ -169,13 +169,13 @@ Cancel pending order
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TradeApi(
+$apiInstance = new D4T\MT4Sdk\Api\TradeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $token = "token_example"; // string | Session token
-$body = new \Swagger\Client\Model\CancelTradeFilterType(); // \Swagger\Client\Model\CancelTradeFilterType | { \"ticket\": 12344}
+$body = new \D4T\MT4Sdk\Models\CancelTradeFilterType(); // \D4T\MT4Sdk\Models\CancelTradeFilterType | { \"ticket\": 12344}
 
 try {
     $result = $apiInstance->tradesCancelPost($token, $body);
@@ -191,11 +191,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **token** | **string**| Session token |
- **body** | [**\Swagger\Client\Model\CancelTradeFilterType**](../Model/CancelTradeFilterType.md)| { \&quot;ticket\&quot;: 12344} |
+ **body** | [**\D4T\MT4Sdk\Models\CancelTradeFilterType**](../Model/CancelTradeFilterType.md)| { \&quot;ticket\&quot;: 12344} |
 
 ### Return type
 
-[**\Swagger\Client\Model\TradeType**](../Model/TradeType.md)
+[**\D4T\MT4Sdk\Models\TradeType**](../Model/TradeType.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tradesHistoryUserLoginGet**
-> \Swagger\Client\Model\ArrayOfTrades tradesHistoryUserLoginGet($token, $user_login, $from, $to, $days_back, $types)
+> \D4T\MT4Sdk\Models\ArrayOfTrades tradesHistoryUserLoginGet($token, $user_login, $from, $to, $days_back, $types)
 
 Get list of history trades for the user
 
@@ -218,7 +218,7 @@ Get list of history trades for the user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TradeApi(
+$apiInstance = new D4T\MT4Sdk\Api\TradeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfTrades**](../Model/ArrayOfTrades.md)
+[**\D4T\MT4Sdk\Models\ArrayOfTrades**](../Model/ArrayOfTrades.md)
 
 ### Authorization
 
@@ -266,7 +266,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **tradesOnlineUserLoginGet**
-> \Swagger\Client\Model\ArrayOfTrades tradesOnlineUserLoginGet($token, $user_login)
+> \D4T\MT4Sdk\Models\ArrayOfTrades tradesOnlineUserLoginGet($token, $user_login)
 
 Get list of live trades for the user
 
@@ -275,7 +275,7 @@ Get list of live trades for the user
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\TradeApi(
+$apiInstance = new D4T\MT4Sdk\Api\TradeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -301,7 +301,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ArrayOfTrades**](../Model/ArrayOfTrades.md)
+[**\D4T\MT4Sdk\Models\ArrayOfTrades**](../Model/ArrayOfTrades.md)
 
 ### Authorization
 
